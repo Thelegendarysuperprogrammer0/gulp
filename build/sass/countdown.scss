@@ -1,0 +1,38 @@
+body {
+	font-family: "Agency FB";
+	width: 60%;
+	margin: 0 auto;
+}
+.countdown-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	.countdown {
+		font-size: 24px;
+	}
+}
+
+.loadmore-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.paragraph {
+		display: block;
+	}
+
+	.paragraphsec {
+		display: none;
+	}
+
+	.lessbutton {
+		 display: none;
+		 width: 100px;
+	 }
+
+	.morebutton {
+		display: block;
+		width: 100px;
+	}
+}
