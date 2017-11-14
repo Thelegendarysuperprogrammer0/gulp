@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
+var browserSync = require('browser-sync');
 
 var sassloc = 'sass/**/*.scss';
 var cssloc = 'styles/css/';

@@ -1,19 +1,17 @@
-paragraphsec = document.getElementById(paragraphsec);
-morebutton = document.getElementById(morebutton);
-lessbutton = document.getElementById(lessbutton);
-
 function loadMore() {
-	if(this.morebutton) {
-		this.paragraphsec.style.display="block";
-		this.lessbutton.style.display="block";
-		this.morebutton.style.display="none";
-	}
-}
+	let displaymore = false;
+	let button = document.getElementById(morebutton);
 
-function loadLess() {
-	if(this.lessbutton) {
-		this.paragraphsec.style.display="none";
-		this.lessbutton.style.display="none";
-		this.morebutton.style.display="block";
+	if(button) {
+		displaymore = true;
+	} else if(button && displaymore === true) {
+		displaymore = false;
 	}
+
+	if(displaymore === true) {
+		document.getElementById(paragraphload).innerHTML('Word word word word')
+	} else {
+		document.getElementById(paragraphload).innerHTML('Word word')
+	}
+
 }
